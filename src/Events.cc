@@ -517,71 +517,71 @@ void Events::CreateOutputTree()
   //index to fatjet in hh candidate
   tree_out->Branch("hh_fatjet_idx",   hh_fatjet_idx, "hh_fatjet_idx[2]/i");
 
-  //define fat-jet variables
-  tree_out->Branch("nFatJet",      &nFatJet,     "nFatJet/i");      //
-  tree_out->Branch("FatJet_LSmsoftdrop",      FatJet_LSmsoftdrop,     "FatJet_LSmsoftdrop[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSn2b1",      FatJet_LSn2b1,     "FatJet_LSn2b1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSn3b1",      FatJet_LSn3b1,     "FatJet_LSn3b1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSpt",      FatJet_LSpt,     "FatJet_LSpt[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSrawmsoftdrop",      FatJet_LSrawmsoftdrop,     "FatJet_LSrawmsoftdrop[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSsubJet1btagDeepB",      FatJet_LSsubJet1btagDeepB,     "FatJet_LSsubJet1btagDeepB[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LSsubJet2btagDeepB",      FatJet_LSsubJet2btagDeepB,     "FatJet_LSsubJet2btagDeepB[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LStau1",      FatJet_LStau1,     "FatJet_LStau1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LStau2",      FatJet_LStau2,     "FatJet_LStau2[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LStau3",      FatJet_LStau3,     "FatJet_LStau3[nFatJet]/F");      //
-  tree_out->Branch("FatJet_LStau4",      FatJet_LStau4,     "FatJet_LStau4[nFatJet]/F");      //
-  tree_out->Branch("FatJet_area",      FatJet_area,     "FatJet_area[nFatJet]/F");      //
-  tree_out->Branch("FatJet_btagDDBvL",      FatJet_btagDDBvL,     "FatJet_btagDDBvL[nFatJet]/F");      //
-  tree_out->Branch("FatJet_btagDDCvB",      FatJet_btagDDCvB,     "FatJet_btagDDCvB[nFatJet]/F");      //
-  tree_out->Branch("FatJet_btagDDCvL",      FatJet_btagDDCvL,     "FatJet_btagDDCvL[nFatJet]/F");      //
-  tree_out->Branch("FatJet_btagHbb",      FatJet_btagHbb,     "FatJet_btagHbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_dRLep",      FatJet_btagHbb,     "FatJet_btagHbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagHbb",      FatJet_deepTagHbb,     "FatJet_deepTagHbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagHcc",      FatJet_deepTagHcc,     "FatJet_deepTagHcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagHqqqq",      FatJet_deepTagHqqqq,     "FatJet_deepTagHqqqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDHbb",      FatJet_deepTagMDHbb,     "FatJet_deepTagMDHbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDHcc",      FatJet_deepTagMDHcc,     "FatJet_deepTagMDHcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDHqqqq",      FatJet_deepTagMDHqqqq,     "FatJet_deepTagMDHqqqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDQCDbb",      FatJet_deepTagMDQCDbb,     "FatJet_deepTagMDQCDbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDQCDcc",      FatJet_deepTagMDQCDcc,     "FatJet_deepTagMDQCDcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDWcq",      FatJet_deepTagMDWcq,     "FatJet_deepTagMDWcq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDWqq",      FatJet_deepTagMDWqq,     "FatJet_deepTagMDWqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDZbb",      FatJet_deepTagMDZbb,     "FatJet_deepTagMDZbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDZcc",      FatJet_deepTagMDZcc,     "FatJet_deepTagMDZcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagMDZqq",      FatJet_deepTagMDZqq,     "FatJet_deepTagMDZqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagQCDbb",      FatJet_deepTagQCDbb,     "FatJet_deepTagQCDbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagQCDcc",      FatJet_deepTagQCDcc,     "FatJet_deepTagQCDcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagWcq",      FatJet_deepTagWcq,     "FatJet_deepTagWcq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagWqq",      FatJet_deepTagWqq,     "FatJet_deepTagWqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagZbb",      FatJet_deepTagZbb,     "FatJet_deepTagZbb[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagZcc",      FatJet_deepTagZcc,     "FatJet_deepTagZcc[nFatJet]/F");      //
-  tree_out->Branch("FatJet_deepTagZqq",      FatJet_deepTagZqq,     "FatJet_deepTagZqq[nFatJet]/F");      //
-  tree_out->Branch("FatJet_eta",      FatJet_eta,     "FatJet_eta[nFatJet]/F");      //
-  tree_out->Branch("FatJet_lsf3",      FatJet_lsf3,     "FatJet_lsf3[nFatJet]/F");      //
-  tree_out->Branch("FatJet_mass",      FatJet_mass,     "FatJet_mass[nFatJet]/F");      //
-  tree_out->Branch("FatJet_msoftdrop",      FatJet_msoftdrop,     "FatJet_msoftdrop[nFatJet]/F");      //
-  tree_out->Branch("FatJet_n2b1",      FatJet_n2b1,     "FatJet_n2b1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_n3b1",      FatJet_n3b1,     "FatJet_n3b1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_phi",      FatJet_phi,     "FatJet_phi[nFatJet]/F");      //
-  tree_out->Branch("FatJet_pt",      FatJet_pt,     "FatJet_pt[nFatJet]/F");      //
-  tree_out->Branch("FatJet_rawFactor",      FatJet_rawFactor,     "FatJet_rawFactor[nFatJet]/F");      //
-  tree_out->Branch("FatJet_rawmsoftdrop",      FatJet_rawmsoftdrop,     "FatJet_rawmsoftdrop[nFatJet]/F");      //
-  tree_out->Branch("FatJet_tau1",      FatJet_tau1,     "FatJet_tau1[nFatJet]/F");      //
-  tree_out->Branch("FatJet_tau2",      FatJet_tau2,     "FatJet_tau2[nFatJet]/F");      //
-  tree_out->Branch("FatJet_tau3",      FatJet_tau3,     "FatJet_tau3[nFatJet]/F");      //
-  tree_out->Branch("FatJet_tau4",      FatJet_tau4,     "FatJet_tau4[nFatJet]/F");      //
-  tree_out->Branch("FatJet_electronIdx3SJ",      FatJet_electronIdx3SJ,     "FatJet_electronIdx3SJ[nFatJet]/I");      //
-  tree_out->Branch("FatJet_idLep",      FatJet_idLep,     "FatJet_idLep[nFatJet]/I");      //
-  tree_out->Branch("FatJet_jetId",      FatJet_jetId,     "FatJet_jetId[nFatJet]/I");      //
-  tree_out->Branch("FatJet_muonIdx3SJ",      FatJet_muonIdx3SJ,     "FatJet_muonIdx3SJ[nFatJet]/I");      //
-  tree_out->Branch("FatJet_nBHadrons",      FatJet_nBHadrons,     "FatJet_nBHadrons[nFatJet]/I");      //
-  tree_out->Branch("FatJet_nCHadrons",      FatJet_nCHadrons,     "FatJet_nCHadrons[nFatJet]/I");      //
-  tree_out->Branch("FatJet_nPFConstituents",      FatJet_nPFConstituents,     "FatJet_nPFConstituents[nFatJet]/I");      //
-  tree_out->Branch("FatJet_subJetIdx1",      FatJet_subJetIdx1,     "FatJet_subJetIdx1[nFatJet]/I");      //
-  tree_out->Branch("FatJet_subJetIdx2",      FatJet_subJetIdx2,     "FatJet_subJetIdx2[nFatJet]/I");      //
-  tree_out->Branch("FatJet_Hmatch",      FatJet_Hmatch,     "FatJet_Hmatch[nFatJet]/O");
-  tree_out->Branch("FatJet_HgenIdx",      FatJet_HgenIdx,     "FatJet_HgenIdx[nFatJet]/I");
-  tree_out->Branch("FatJet_HminDR",      FatJet_HminDR,     "FatJet_HminDR[nFatJet]/F");
+//  //define fat-jet variables
+//  tree_out->Branch("nFatJet",      &nFatJet,     "nFatJet/i");      //
+//  tree_out->Branch("FatJet_LSmsoftdrop",      FatJet_LSmsoftdrop,     "FatJet_LSmsoftdrop[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSn2b1",      FatJet_LSn2b1,     "FatJet_LSn2b1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSn3b1",      FatJet_LSn3b1,     "FatJet_LSn3b1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSpt",      FatJet_LSpt,     "FatJet_LSpt[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSrawmsoftdrop",      FatJet_LSrawmsoftdrop,     "FatJet_LSrawmsoftdrop[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSsubJet1btagDeepB",      FatJet_LSsubJet1btagDeepB,     "FatJet_LSsubJet1btagDeepB[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LSsubJet2btagDeepB",      FatJet_LSsubJet2btagDeepB,     "FatJet_LSsubJet2btagDeepB[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LStau1",      FatJet_LStau1,     "FatJet_LStau1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LStau2",      FatJet_LStau2,     "FatJet_LStau2[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LStau3",      FatJet_LStau3,     "FatJet_LStau3[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_LStau4",      FatJet_LStau4,     "FatJet_LStau4[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_area",      FatJet_area,     "FatJet_area[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_btagDDBvL",      FatJet_btagDDBvL,     "FatJet_btagDDBvL[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_btagDDCvB",      FatJet_btagDDCvB,     "FatJet_btagDDCvB[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_btagDDCvL",      FatJet_btagDDCvL,     "FatJet_btagDDCvL[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_btagHbb",      FatJet_btagHbb,     "FatJet_btagHbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_dRLep",      FatJet_btagHbb,     "FatJet_btagHbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagHbb",      FatJet_deepTagHbb,     "FatJet_deepTagHbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagHcc",      FatJet_deepTagHcc,     "FatJet_deepTagHcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagHqqqq",      FatJet_deepTagHqqqq,     "FatJet_deepTagHqqqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDHbb",      FatJet_deepTagMDHbb,     "FatJet_deepTagMDHbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDHcc",      FatJet_deepTagMDHcc,     "FatJet_deepTagMDHcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDHqqqq",      FatJet_deepTagMDHqqqq,     "FatJet_deepTagMDHqqqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDQCDbb",      FatJet_deepTagMDQCDbb,     "FatJet_deepTagMDQCDbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDQCDcc",      FatJet_deepTagMDQCDcc,     "FatJet_deepTagMDQCDcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDWcq",      FatJet_deepTagMDWcq,     "FatJet_deepTagMDWcq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDWqq",      FatJet_deepTagMDWqq,     "FatJet_deepTagMDWqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDZbb",      FatJet_deepTagMDZbb,     "FatJet_deepTagMDZbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDZcc",      FatJet_deepTagMDZcc,     "FatJet_deepTagMDZcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagMDZqq",      FatJet_deepTagMDZqq,     "FatJet_deepTagMDZqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagQCDbb",      FatJet_deepTagQCDbb,     "FatJet_deepTagQCDbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagQCDcc",      FatJet_deepTagQCDcc,     "FatJet_deepTagQCDcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagWcq",      FatJet_deepTagWcq,     "FatJet_deepTagWcq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagWqq",      FatJet_deepTagWqq,     "FatJet_deepTagWqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagZbb",      FatJet_deepTagZbb,     "FatJet_deepTagZbb[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagZcc",      FatJet_deepTagZcc,     "FatJet_deepTagZcc[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_deepTagZqq",      FatJet_deepTagZqq,     "FatJet_deepTagZqq[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_eta",      FatJet_eta,     "FatJet_eta[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_lsf3",      FatJet_lsf3,     "FatJet_lsf3[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_mass",      FatJet_mass,     "FatJet_mass[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_msoftdrop",      FatJet_msoftdrop,     "FatJet_msoftdrop[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_n2b1",      FatJet_n2b1,     "FatJet_n2b1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_n3b1",      FatJet_n3b1,     "FatJet_n3b1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_phi",      FatJet_phi,     "FatJet_phi[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_pt",      FatJet_pt,     "FatJet_pt[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_rawFactor",      FatJet_rawFactor,     "FatJet_rawFactor[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_rawmsoftdrop",      FatJet_rawmsoftdrop,     "FatJet_rawmsoftdrop[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_tau1",      FatJet_tau1,     "FatJet_tau1[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_tau2",      FatJet_tau2,     "FatJet_tau2[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_tau3",      FatJet_tau3,     "FatJet_tau3[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_tau4",      FatJet_tau4,     "FatJet_tau4[nFatJet]/F");      //
+//  tree_out->Branch("FatJet_electronIdx3SJ",      FatJet_electronIdx3SJ,     "FatJet_electronIdx3SJ[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_idLep",      FatJet_idLep,     "FatJet_idLep[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_jetId",      FatJet_jetId,     "FatJet_jetId[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_muonIdx3SJ",      FatJet_muonIdx3SJ,     "FatJet_muonIdx3SJ[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_nBHadrons",      FatJet_nBHadrons,     "FatJet_nBHadrons[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_nCHadrons",      FatJet_nCHadrons,     "FatJet_nCHadrons[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_nPFConstituents",      FatJet_nPFConstituents,     "FatJet_nPFConstituents[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_subJetIdx1",      FatJet_subJetIdx1,     "FatJet_subJetIdx1[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_subJetIdx2",      FatJet_subJetIdx2,     "FatJet_subJetIdx2[nFatJet]/I");      //
+//  tree_out->Branch("FatJet_Hmatch",      FatJet_Hmatch,     "FatJet_Hmatch[nFatJet]/O");
+//  tree_out->Branch("FatJet_HgenIdx",      FatJet_HgenIdx,     "FatJet_HgenIdx[nFatJet]/I");
+//  tree_out->Branch("FatJet_HminDR",      FatJet_HminDR,     "FatJet_HminDR[nFatJet]/F");
 
   //triggers -- directly from Events TTree
   tree_out->Branch("HLT_PFHT1050",                                        &HLT_PFHT1050,                                       "HLT_PFHT1050/O");
@@ -594,7 +594,8 @@ void Events::CreateOutputTree()
   tree_out->Branch("HLT_AK8PFJet500",                                     &HLT_AK8PFJet500,                                    "HLT_AK8PFJet500/O");
   tree_out->Branch("HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p17",     &HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p17,    "HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p17/O");
   tree_out->Branch("HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p1",      &HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p1,     "HLT_AK8PFJet330_TrimMass30_PFAK8BTagDeepCSV_p1/O");
-  tree_out->Branch("HLT_AK8PFJet330_PFAK8BTagCSV_p17",                    &HLT_AK8PFJet330_PFAK8BTagCSV_p17,                   "HLT_AK8PFJet330_PFAK8BTagCSV_p17/O");
+  //tree_out->Branch("HLT_AK8PFJet330_PFAK8BTagCSV_p17",                    &HLT_AK8PFJet330_PFAK8BTagCSV_p17,                   "HLT_AK8PFJet330_PFAK8BTagCSV_p17/O");
+  
   tree_out->Branch("HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ",                                        &HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,                                       "HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ/O");
   tree_out->Branch("HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL",                                        &HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL,                                       "HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL/O");
   tree_out->Branch("HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL",                                        &HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL,                                       "HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL/O");

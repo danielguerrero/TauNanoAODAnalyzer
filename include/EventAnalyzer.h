@@ -2,6 +2,7 @@
 #define EventAnalyzer_h
 
 #include "Events.hh" //This is a MakeClass of the RazorEvents tree in the ntuple to be analyzed
+#include "TH1F.h"
 
 //ROOT includes
 #include <TROOT.h>
@@ -24,8 +25,15 @@ class EventAnalyzer: public Events {
         virtual ~EventAnalyzer();       
 
         /* void EnableAll(); */
-	double deltaPhi(double phi1, double phi2);
-	double deltaR(double eta1, double phi1, double eta2, double phi2);
+    	double deltaPhi(double phi1, double phi2);
+    	double deltaR(double eta1, double phi1, double eta2, double phi2);
+    	std::pair<double,double> METXYCorr_Met_MetPhi(double uncormet, double uncormet_phi, int runnb, TString year, bool isMC, int npv, bool isUL);
+    	int FindMotherIndex(int dautherIndex = -1);
+    	TFile *metTriggerSFFile;
+        TH1F *metTriggerSFHist;
+        TLorentzVector makeTLorentzVector(double pt, double eta, double phi, double energy);
+    	TLorentzVector makeTLorentzVectorPtEtaPhiM(double pt, double eta, double phi, double mass);
+        double GetMETTriggerSF(float met, TH1F *metTriggerSFFile);
 
         //------ LIST OF ANALYSES ------//
         virtual void Analyze(bool isData, int option, string outputFileName, string label, string pileupWeightName);
